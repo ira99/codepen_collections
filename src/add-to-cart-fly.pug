@@ -1,0 +1,9 @@
+extends pug/base
+
+include components/add-to-cart-fly/add-to-cart-fly
+
+append vars
+	- title = 'Add to basket - fly animation'
+
+block content
+	+add-to-cart-fly()

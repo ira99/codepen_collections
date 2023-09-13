@@ -1,0 +1,59 @@
+mixin product(data)
+  .product.js-product 
+    a.product__image(href="#") 
+      img(src=data.img alt="product").js-product__img
+    .product__desc 
+      .product__name=data.name 
+      .product__text=data.desc 
+      .product__line 
+        .product__price=data.price 
+        .btn.js-add-basket Купить
+
+mixin add-to-cart-fly()
+  .basket-unit.js-basket-total  
+    img.basket-unit__icon(src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38239/preview.svg" alt="icon")
+    span.basket-unit__count.js-basket-count(data-product-count="0") 0
+
+  section.grid 
+    +product({
+      img: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-model-unselect-gallery-1-202209?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660689596976',
+      name: 'Apple iPhone 14 Pro Max',
+      desc: '128 ГБ золотой', 
+      price: '104 985 Р'
+    })
+
+    +product({
+      img: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-model-unselect-gallery-2-202303_GEO_US?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1676930656150',
+      name: 'Apple iPhone 14 Pro Max',
+      desc: '64 ГБ серебристый', 
+      price: '102 568 Р'
+    })
+
+    +product({
+      img: 'https://www.apple.com/v/iphone-15-pro/a/images/overview/usb-c/usbc__dqdn0phay4mu_large.jpg',
+      name: 'Apple iPhone 14 Pro Max',
+      desc: '256 ГБ золотой', 
+      price: '128 566 Р'
+    })
+
+    +product({
+      img: 'https://www.01net.com/app/uploads/2022/09/14-Pro-Max-MEA.jpg',
+      name: 'Apple iPhone 14 Pro Max',
+      desc: '512 ГБ золотой', 
+      price: '131 999 Р'
+    })
+
+    +product({
+      img: 'https://www.presse-citron.net/app/uploads/2022/09/test-iphone-14-avis.jpg',
+      name: 'Apple iPhone 14 Pro Max',
+      desc: '512 ГБ темно-фиолетовый', 
+      price: '132 225 Р'
+    })
+
+    +product({
+      img: 'https://www.01net.com/app/uploads/2022/09/3506-mea_1400.jpg',
+      name: 'Apple iPhone 14 Pro',
+      desc: '512 ГБ серебристый', 
+      price: '132 566 Р'
+    })
+
