@@ -1,0 +1,11 @@
+extends pug/base
+
+include components/flying-gallery/flying-gallery
+
+append vars
+	- title = 'Flying scroll gallery gsap'
+
+block content
+	//- section(style="height: 300vh; position: relative; z-index: 100; background-color: green")
+	+flying-gallery()
+	//- section(style="height: 200vh; position: relative; z-index: 100; background-color: green")

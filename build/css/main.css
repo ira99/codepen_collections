@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite, code, del,
@@ -897,5 +898,52 @@ html, body {
   100% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px); } }
+
+html, body, #app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+#app {
+  opacity: 0;
+  height: auto;
+  background: #FFB6C1; }
+
+#detail {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+
+#detailImg {
+  width: 85%;
+  height: 85%; }
+
+#detailTxt {
+  color: #ccc;
+  font-size: 20px;
+  letter-spacing: 1px; }
+
+svg {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#headlines {
+  max-width: 800px;
+  min-width: 450px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=main.css.map */
