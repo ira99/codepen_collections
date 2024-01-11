@@ -1,0 +1,11 @@
+extends pug/base
+
+include components/scroll-image-animate/scroll-image-animate
+
+append vars
+	- title = 'ScrollTrigger gsap image animate'
+
+block content
+	//- section(style="height: 300vh; position: relative; z-index: 100; background-color: green")
+	+scroll-image-animate()
+	//- section(style="height: 200vh; position: relative; z-index: 100; background-color: green")

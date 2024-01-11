@@ -1,0 +1,36 @@
+
+$beige: #bcb8ad
+$pink: #b69187
+$green: #3c564f
+$brown: #b6916d
+
+.container
+  width: 100%
+  height: 100vh
+  display: flex 
+  align-items: center 
+  justify-content: center
+  background-color: $brown
+
+  &--beige 
+    background-color: $beige
+  
+  &--pink 
+    background: $pink
+  
+  &--green
+    background-color: $green
+  
+  &__block 
+    visibility: hidden 
+    position: relative 
+    width: 80% 
+    height: 80% 
+    max-width: 500px
+    overflow: hidden
+
+    img 
+      width: 100% 
+      height: 100% 
+      object-fit: cover 
+      transform-origin: left 

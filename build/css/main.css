@@ -946,4 +946,32 @@ svg {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b6916d; }
+  .container--beige {
+    background-color: #bcb8ad; }
+  .container--pink {
+    background: #b69187; }
+  .container--green {
+    background-color: #3c564f; }
+  .container__block {
+    visibility: hidden;
+    position: relative;
+    width: 80%;
+    height: 80%;
+    max-width: 500px;
+    overflow: hidden; }
+    .container__block img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -webkit-transform-origin: left;
+              transform-origin: left; }
+
 /*# sourceMappingURL=main.css.map */
