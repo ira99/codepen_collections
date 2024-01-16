@@ -1,0 +1,6 @@
+mixin card-hover-effect()
+  .cards 
+    .cards__grid 
+      each image in ['background-image: url(https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_1.jpg);', 'background-image: url(https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_2.jpg);', 'background-image: url(https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_3.jpg);', 'background-image: url(https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_4.jpg);']
+        .cards-block 
+          .cards-block__cover(style=image)

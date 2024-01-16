@@ -1,0 +1,9 @@
+extends pug/base
+
+include components/card-hover-effect/card-hover-effect
+
+append vars
+	- title = 'Card hover effect'
+
+block content
+	+card-hover-effect()
