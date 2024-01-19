@@ -1,0 +1,9 @@
+extends pug/base
+
+include components/scroll-animation/scroll-animation
+
+append vars
+	- title = 'Gsap scroll-animation'
+
+block content
+	+scroll-animation()

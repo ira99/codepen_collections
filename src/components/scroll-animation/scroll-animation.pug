@@ -1,0 +1,37 @@
+mixin scroll-animation()
+  section.hero 
+    h1 gsap scroll animation blocks
+  +step({
+    img: "https://source.unsplash.com/random/1240x874?sig=164",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illo sit quis. Rerum architecto provident asperiores, quibusdam neque ipsam possimus ducimus atque tempora ab inventore, mollitia, quam velit quasi ullam."
+  })
+
+  +step({
+    cl: "step--gray",
+    clPart: "step__part--reverse",
+    img: "https://source.unsplash.com/random/1240x874?sig=186",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illo sit quis. Rerum architecto provident asperiores, quibusdam neque ipsam possimus ducimus atque tempora ab inventore, mollitia, quam velit quasi ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illo."
+  })
+
+  +step({
+    title: "Gsap scroll anmation",
+    img: "https://source.unsplash.com/random/1240x874?sig=42",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illo sit quis. Rerum architecto provident asperiores, quibusdam neque ipsam possimus ducimus atque tempora ab inventore, mollitia, quam velit quasi ullam."
+  })
+
+  +step({
+    cl: "step--gray",
+    clPart: "step__part--reverse",
+    img: "https://source.unsplash.com/random/1240x874?sig=172",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illo sit quis. Rerum architecto provident asperiores, quibusdam neque ipsam possimus ducimus atque tempora ab inventore, mollitia, quam velit quasi ullam. Lorem ipsum dolor sit amet consectetur adipisicin."
+  })
+
+
+mixin step(data)
+  section.step(class= data.cl)
+    .step__part(class= data.clPart)
+      .step__image(data-scroll-animate='{"opacity": 0, "x": -100, "duration": 1}')
+        img(src=data.img width="600" height="422" alt="")
+      .step__desc(data-scroll-animate='{"opacity": 0, "y": 150, "duration": 0.7}')
+        h2 Title
+        p!= data.text
