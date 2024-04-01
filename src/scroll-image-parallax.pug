@@ -1,0 +1,10 @@
+extends pug/base
+
+include components/scroll-image-parallax/scroll-image-parallax
+
+append vars
+	- title = 'ScrollTrigger gsap image parallax'
+
+block content
+	section
+		+scroll-image-parallax()

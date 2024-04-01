@@ -1,9 +1,7 @@
 import 'babel-polyfill';
 import svg4everybody from 'svg4everybody';
-import Swiper from 'swiper';
 import { gsap, TweenMax, TimelineLite, TweenLite, Linear, Power1, Power2 } from "gsap/all";
 
-window.Swiper = Swiper;
 window.gsap = gsap;
 window.TweenMax = TweenMax;
 window.TimelineLite = TimelineLite;

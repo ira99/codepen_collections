@@ -1,0 +1,15 @@
+extends pug/base
+
+include components/swiper-vertical-creative/swiper-vertical-creative
+
+append vars
+  - title = 'Flying scroll gallery gsap'
+
+append links
+  link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.3/swiper-bundle.css")
+block content
+  //- section(style="height: 300vh; position: relative; z-index: 100; background-color: green")
+  +swiper-vertical-creative()
+
+prepend scripts
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.3/swiper-bundle.min.js")

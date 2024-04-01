@@ -1,0 +1,9 @@
+extends pug/base
+
+include components/vertical-gallery/vertical-gallery
+
+append vars
+	- title = 'Flying scroll gallery gsap'
+
+block content
+	+vertical-gallery()

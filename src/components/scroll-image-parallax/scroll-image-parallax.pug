@@ -1,0 +1,10 @@
+mixin scroll-image-parallax()
+  +card({src: 'https://picsum.photos/400/401'})
+  +card({src: 'https://picsum.photos/400/402'})
+  +card({src: 'https://picsum.photos/400/403'})
+  +card({src: 'https://picsum.photos/400/404'})
+
+mixin card(data)
+  .card 
+    .card__image(data-img-parallax='')
+      img(src=data.src alt="image" data-img='')

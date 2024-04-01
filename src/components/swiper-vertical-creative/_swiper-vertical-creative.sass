@@ -1,0 +1,138 @@
+/* Hero section*/
+.hero
+  width: 100%
+  position: relative
+
+  &__slider 
+    position: relative 
+    &:before 
+      content: ''
+      width: 100% 
+      height: 100% 
+      background-color: rgba(#111111, 0.35)
+      position: absolute 
+      top: 0 
+      left: 0 
+      z-index: 2
+
+  &__photo 
+    width: 100%
+    height: 100vh
+
+    picture, img 
+      width: 100%
+      height: 100%
+
+    img 
+      object-fit: cover
+      object-position: top center
+    
+
+    @media screen and (max-width: 1081px) 
+      height: 100svh
+  
+  &__slider-thumb-wrap
+    max-width: 580px
+    width: 100%
+    position: absolute
+    left: 50px
+    bottom: 40px
+    z-index: 3
+    pointer-events: none
+    @media screen and (max-width: 1500px)
+      left: 0
+      max-width: 640px
+      padding: 0 30px
+    @media screen and (max-width: 1081px)
+      padding: 0 20px
+      bottom: 62px
+      max-width: 100%
+    @media screen and (max-width: 681px) 
+      padding: 0 15px
+      bottom: 40px
+    
+
+  &__slider-thumb
+    width: 100%
+    height: 120px
+
+    @media screen and (max-width: 1081px)
+      max-width: 598px
+      margin-left: 0
+
+    @media screen and (max-width: 681px)
+      height: 165px
+
+  &__item-thumb
+    transition: opacity 1s
+    &.swiper-slide-prev 
+      opacity: 0
+  &__desc 
+    color: var(--white)
+
+  &__count
+    font-size: 20px
+    line-height: 1
+    padding-bottom: 20px
+    margin-bottom: 18px
+    color: #ffffff
+    border-bottom: 1px solid rgba(255,255,255,0.7)
+
+  &__name
+    font-size: 32px
+    line-height: 40px
+    margin: 0
+    font-weight: 400
+    position: relative
+
+    @media screen and (max-width: 681px)
+      font-size: 24px
+      line-height: 33px
+
+  &__arrow
+    display: inline-flex
+    align-items: center
+    position: absolute
+    bottom: 33px
+    right: 65px
+    font-size: 14px
+    z-index: 3
+    color: var(--white)
+
+    svg
+      width: 24px
+      height: 24px
+      margin: 10px
+    @media screen and (max-width: 1081px)
+      display: none
+
+.hero__pagination
+  width: auto !important
+  display: inline-flex 
+  position: absolute 
+  right: 30px
+  bottom: 40px !important
+  left: auto !important
+  top: auto !important
+  z-index: 5
+  pointer-events: none
+
+  span 
+    width: 14px 
+    height: 14px 
+    border-radius: 50% 
+    border: 1px solid #ffffff
+    margin: 0 8px 
+    cursor: pointer 
+    transition: 0.3s 
+    opacity: 1 !important
+    background-color: transparent !important
+
+    &:hover 
+      opacity: 0.7 !important
+    
+    &.swiper-pagination-bullet-active
+       background-color: #ffffff !important
+       transform: scale(1.5)
+   
+

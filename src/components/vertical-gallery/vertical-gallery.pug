@@ -1,0 +1,24 @@
+mixin vertical-gallery()
+  .section 
+    h1 Here comes the gallery
+  #values(data-parallax-container='')
+    .text-wrap
+      .text-wrap__wrapper
+        .text-wrap__text
+          .p-card
+            p Subheadline 1
+            h2 Headline 1
+            p Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.
+          .p-card
+            p Subheadline 2
+            h2 Headline 2
+            p Sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.
+          .p-card
+            p Subheadline 3
+            h2 Headline 3
+            p Cras ultricies ligula sed magna dictum porta. Nulla quis Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.
+    .p-wrap(data-img-wrap="")
+      each item in ['background-image: url(https://picsum.photos/200/404)', 'background-image: url(https://picsum.photos/500/405)', 'background-image: url(https://picsum.photos/700/407)']
+        .core-image.bg-image(style=item data-parallax-img="")
+  .section.section--green
+    h3 Bye gallery

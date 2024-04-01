@@ -1,0 +1,31 @@
+mixin swiper-vertical-creative()
+  .hero 
+    .hero__slider.swiper.slider(data-slider-hero="")
+      .swiper-wrapper
+        +swiper-item({src: 'https://source.unsplash.com/random/1240x874?sig=164'})
+        +swiper-item({src: 'https://source.unsplash.com/random/1240x874?sig=154'})
+        +swiper-item({src: 'https://source.unsplash.com/random/1240x874?sig=144'})
+        +swiper-item({src: 'https://source.unsplash.com/random/1240x874?sig=134'})
+        +swiper-item({src: 'https://source.unsplash.com/random/1240x874?sig=174'})
+        +swiper-item({src: 'https://source.unsplash.com/random/1240x874?sig=124'})
+      .hero__pagination
+    .hero__slider-thumb-wrap
+      .hero__count(data-slide-count="") 01
+      .hero__slider-thumb.swiper.slider(data-slider-hero-thumb="")
+        .swiper-wrapper
+          +swiper-item-desc({name: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est inventore, molestias, cumque aut"})
+          +swiper-item-desc({name: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est inventore,"})
+          +swiper-item-desc({name: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est inventore, molestias, cumque aut"})
+          +swiper-item-desc({name: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est inventore, molestias"})
+          +swiper-item-desc({name: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est inventore, molestias, cumque aut"})
+          +swiper-item-desc({name: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est inventore, molesti"})
+
+mixin swiper-item(data) 
+  .swiper-slide.hero__item
+    .hero__photo
+      img(src=data.src alt="image")
+
+mixin swiper-item-desc(data)
+  .swiper-slide.hero__item-thumb
+    .hero__desc
+      .hero__name=data.name
